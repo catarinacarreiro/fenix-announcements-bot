@@ -2,6 +2,14 @@
 Um bot de discord para interagir com a plataforma [FénixEdu](https://fenixedu.org/). Desenvolvido originalmente para o servidor de discord de um dos anos do curso de [Engenharia Aeroespacial](https://fenix.tecnico.ulisboa.pt/cursos/meaer) no [Instituto Superior Técnico](https://tecnico.ulisboa.pt/).
 Entre as features presentes até ao momento estão: horários do shuttle, menus da cantina (social) e a leitura automática dos anúncios de uma cadeira, e posterior envio dos mesmos para o discord, através dos feeds rss fornecidos pelo fénix.
 
+## Commands
+```
+list - Lists all available courses
+activate [course-code] - Activates the announcements
+deactivate [course-code] - FIX ME
+help - FIX ME
+```
+
 ## Instalação
 * [Instalação via clone (usual)](#via-clone)
 * [Instalação via deploy para o Heroku](deploy-para-o-heroku)
@@ -14,18 +22,7 @@ A configuração da aplicação é realizada em dois sítios diferentes:
 
 Uma descrição detalhada das várias opções e seus valores pode ser encontrada [aqui](https://github.com/guipenedo/fenix-discord-bot/wiki/Configura%C3%A7%C3%A3o).
 
-## Comandos
-```
-!shuttle [hoje/amanha/data] [hora] - Horário do shuttle
-!social [hoje/amanha/data] - Ver o prato do social
 
-[] - opcional <> - obrigatório
-```
-### Comandos de admin
-```
-!rss - lista de cadeiras do curso
-!rss [acrónimo] - ativa ou desativa os anúncios de uma dada cadeira
-```
 
 ## Anúncios do Fénix
 Para ativar anúncios para uma dada cadeira, deve-se usar o comando `!rss [acrónimo]`. A lista de todas as cadeiras (e respetivos acrónimos), pode ser consultada com `!rss` (sem argumentos).
