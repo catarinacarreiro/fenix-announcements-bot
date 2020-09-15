@@ -4,8 +4,6 @@ module.exports = {
 	description: 'Alterar subscrições rss de anúncios',
 	usage: '[acrónimo]',
 	name: 'rss',
-	aliases: ['feeds'],
-	admin: true,
 	handle: message => {
 		let args = message.content.split(' ').slice(1);
 		if(args.length > 1)
