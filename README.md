@@ -25,20 +25,25 @@ The bot regularly checks for new entries on a course's rss feed suplied by [Inst
 + [double-ended-queue](https://www.npmjs.com/package/double-ended-queue)
 + [dotenv](https://www.npmjs.com/package/dotenv)
 
-## Getting Started
+## How Can I Use It In My Own Discord Server
+### Creating The Bot
+1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/), create a new application and name it (this is not the bot's name).
+2. Navigate to the Bot tab, add a bot, give it a name and make sure that both PUBLIC BOT and REQUIRES OAUTH2 CODE GRANT are disabled.
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Adding The Bot To The Server
+1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/), select the application containing the bot, navigate to the OAuth2 tab, scroll down to the OAuth2 URL Generator section and under Scopes select bot, navigate to the generated link and add the bot to your desired server.
 
-### Prerequisites
+### Deploying The Bot
+#### Deploying Locally
+1. Install [Node.js](https://nodejs.org/en/download/) and [MongoDB](https://www.mongodb.com/try/download/community).
+2. Clone this repository. `git clone https://github.com/cristiano-clemente/fenix-announcements-bot.git`
+3. Navigate to the repository. `cd fenix-discord-bot`
+4. Install dependencies. `npm install`
+5. Make a copy of .env.default, name it .env e fill in the configurations. `cp .env.default .env`
+6. Run the bot. `npm start`
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
+#### Deploying To Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -53,6 +58,8 @@ npm install
 ```JS
 const API_KEY = 'ENTER YOUR API';
 ```
+
+### Configuring The Bot
 
 ## Commands
 ```
