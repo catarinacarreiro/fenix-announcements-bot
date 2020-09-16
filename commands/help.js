@@ -1,26 +1,17 @@
-const fs = require('fs');
-const config = require('../config');
-
 module.exports = {
 	description: 'FIX ME',
 	usage: 'FIX ME',
 	name: 'help',
 	handle: msg => {
-
+		let list = require('./list');
+		let activate = require('./activate');
+		let deactivate = require('./deactivate');
+		let help = require('./help');
 		var helpList = '';
-
-		function walk(dir, prefix){
-			fs.readdirSync(dir + '/').forEach((file) => {
-				if (file.match(/\.js$/) && file !== 'index.js') {
-					let command = require('./' + prefix + file);
-					//command.helpString = `${config.BOT_PREFIX}${command.name} ${command.usage} - ${command.description}`;
-					helpList += `${command.helpString}\n`;
-				}
-			});
-		}
-
-		walk(__dirname, '');
-
-		msg.channel.send(`\`\`\`Command list:\n${helpList}\n[] - opcional <> - obrigatório\`\`\``);
+		helpList += `${list.helpString}\n`;
+		helpList += `${activate.helpString}\n`;
+		helpList += `${deactivate.helpString}\n`;
+		helpList += `${help.helpString}\n`;
+		msg.channel.send(`\`\`\`Command list:\n${helpList}\`\`\``);
 	}
 };
