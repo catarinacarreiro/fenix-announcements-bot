@@ -8,7 +8,7 @@ function walk(dir, prefix){
 		if (file.match(/\.js$/) && file !== 'index.js') {
 			let command = require('./' + prefix + file);
 			module.exports.set(command.name, command);
-			command.helpString = `${config.BOT_PREFIX}${command.name} ${command.usage} - ${command.description}`;
+			command.helpString = `${config.BOT_PREFIX}${command.name}${command.usage} - ${command.description}`;
 			command.showHelp = message => message.channel.send(`\`\`\`${command.helpString}\`\`\``);
 		}
 	});
