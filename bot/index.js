@@ -35,7 +35,7 @@ client.on('message', message => {
 		else
 			message.channel.send('Este comando requer a permissão *MANAGE_CHANNELS*.');
 	} else
-		commands.get('help').handle(message);
+		commands.get('ajuda').handle(message);
 });
 
 module.exports = client;

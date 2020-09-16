@@ -1,7 +1,7 @@
 const Course = require('../models').Course;
 
 module.exports = {
-	description: 'ativa os anuncios da uc especificada',
+	description: 'ativa os anúncios da uc',
 	usage: 'código-uc',
 	name: 'ativar',
 	handle: message => {
