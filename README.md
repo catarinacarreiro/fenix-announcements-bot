@@ -1,34 +1,29 @@
-# Fenix Announcements Bot (FAB)
-Um bot de discord para interagir com a plataforma [FénixEdu](https://fenixedu.org/). Desenvolvido originalmente para o servidor de discord de um dos anos do curso de [Engenharia Aeroespacial](https://fenix.tecnico.ulisboa.pt/cursos/meaer) no [Instituto Superior Técnico](https://tecnico.ulisboa.pt/).
-Entre as features presentes até ao momento estão: horários do shuttle, menus da cantina (social) e a leitura automática dos anúncios de uma cadeira, e posterior envio dos mesmos para o discord, através dos feeds rss fornecidos pelo fénix.
+<br />
+<p align="center">
+  <a>
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Commands
-```
-list - Lists all available courses
-activate [course-code] - Activates the announcements
-deactivate [course-code] - FIX ME
-help - FIX ME
-```
+  <h3 align="center">Fénix Announcements Bot</h3>
 
-## Instalação
-* [Instalação via clone (usual)](#via-clone)
-* [Instalação via deploy para o Heroku](deploy-para-o-heroku)
-## Criação e adição do bot de discord
-Para utilizar a app é necessário criar um bot de discord e adicioná-lo ao servidor onde se pretende que este corra. Instruções [aqui](https://github.com/guipenedo/fenix-discord-bot/wiki/Cria%C3%A7%C3%A3o-e-adi%C3%A7%C3%A3o-do-bot).
-## Configuração
-A configuração da aplicação é realizada em dois sítios diferentes:
-* No ficheiro .env, para deployments feitos via git clone (copiar o ficheiro .env.default para .env e editá-lo)
-* Nas config vars, para deployments para o heroku (Settings -> Config vars -> Reveal config vars)
+  <p align="center">
+    A discord bot that automatically displays courses' announcements on a channel.
+  </p>
+</p>
 
-Uma descrição detalhada das várias opções e seus valores pode ser encontrada [aqui](https://github.com/guipenedo/fenix-discord-bot/wiki/Configura%C3%A7%C3%A3o).
+## Table of Contents
 
+* [How It Works](#how-it-works)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Commands](#available-commands)
 
+## How It Works
+The bot regularly checks for new entries on a course's rss feed suplied by [Instituto Superior Técnico](https://tecnico.ulisboa.pt/)'s [FénixEdu](https://fenixedu.org/) and automatically sends them to a certain discord server channel.
 
-## Anúncios do Fénix
-Para ativar anúncios para uma dada cadeira, deve-se usar o comando `!rss [acrónimo]`. A lista de todas as cadeiras (e respetivos acrónimos), pode ser consultada com `!rss` (sem argumentos).
-O formato da mensagem dos anúncios pode ser alterada na configuração. Mais info [aqui](https://github.com/guipenedo/fenix-discord-bot/wiki/Configura%C3%A7%C3%A3o#bot_announcement).
-
-## Tecnologias e bibliotecas
+## Built With
 + [Node.js](https://nodejs.org/en/)
 + [discord.js](https://www.npmjs.com/package/discord.js)
 + [Mongoose](https://www.npmjs.com/package/mongoose)
@@ -38,3 +33,40 @@ O formato da mensagem dos anúncios pode ser alterada na configuração. Mais in
 + [html-to-text](https://www.npmjs.com/package/html-to-text)
 + [double-ended-queue](https://www.npmjs.com/package/double-ended-queue)
 + [dotenv](https://www.npmjs.com/package/dotenv)
+
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+```sh
+npm install npm@latest -g
+```
+
+### Installation
+
+1. Get a free API Key at [https://example.com](https://example.com)
+2. Clone the repo
+```sh
+git clone https://github.com/your_username_/Project-Name.git
+```
+3. Install NPM packages
+```sh
+npm install
+```
+4. Enter your API in `config.js`
+```JS
+const API_KEY = 'ENTER YOUR API';
+```
+
+## Commands
+```
+list - lists all courses and their acronyms
+activate [acronym] - Activates the announcements
+deactivate [acronym] - FIX ME
+help - lists all available commands and what they do
+```
