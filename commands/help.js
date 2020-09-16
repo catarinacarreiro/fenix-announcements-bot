@@ -1,7 +1,7 @@
 module.exports = {
-	description: 'FIX ME',
-	usage: 'FIX ME',
-	name: 'help',
+	description: 'enumera todos os comandos e respetiva descrição',
+	usage: '',
+	name: 'ajuda',
 	handle: msg => {
 		let list = require('./list');
 		let activate = require('./activate');
