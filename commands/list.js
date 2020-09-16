@@ -1,9 +1,9 @@
 const Course = require('../models').Course;
 
 module.exports = {
-	description: 'LIST FIX ME',
-	usage: 'LIST FIX ME',
-	name: 'list',
+	description: 'lista todas as uc e seus códigos',
+	usage: '',
+	name: 'listar',
 	handle: message => {
 			Course.find({}, (error, courses) => {
 				if(error) throw error;

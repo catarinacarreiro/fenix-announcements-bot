@@ -2,9 +2,9 @@ const fs = require('fs');
 const config = require('../config');
 
 module.exports = {
-	description: 'FIX ME',
-	usage: 'FIX ME',
-	name: 'help',
+	description: 'enumera todos os comandos e respetiva descrição',
+	usage: '',
+	name: 'ajuda',
 	handle: msg => {
 
 		var helpList = '';
