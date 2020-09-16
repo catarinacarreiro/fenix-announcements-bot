@@ -1,24 +1,15 @@
 <br />
 <p align="center">
   <a>
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/ist_logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Fénix Announcements Bot</h3>
+  <h3 align="center">Fénix Announcements Bot (FAB)</h3>
 
   <p align="center">
     A discord bot that automatically displays courses' announcements on a channel.
   </p>
 </p>
-
-## Table of Contents
-
-* [How It Works](#how-it-works)
-* [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Commands](#available-commands)
 
 ## How It Works
 The bot regularly checks for new entries on a course's rss feed suplied by [Instituto Superior Técnico](https://tecnico.ulisboa.pt/)'s [FénixEdu](https://fenixedu.org/) and automatically sends them to a certain discord server channel.
