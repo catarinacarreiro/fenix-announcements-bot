@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a>
-    <img src="images/ist_logo.png" alt="Logo" width="80" height="80">
+    <img src="images/ist_logo.png"">
   </a>
 
   <h3 align="center">Fénix Announcements Bot (FAB)</h3>
