@@ -1,9 +1,9 @@
 const Course = require('../models').Course;
 
 module.exports = {
-	description: 'FIX ME',
-	usage: 'FIX ME',
-	name: 'deactivate',
+	description: 'desativa os anuncios da uc especificada',
+	usage: 'codigo-uc',
+	name: 'desativar',
 	handle: message => {
 		let args = message.content.split(' ').slice(1);
     if(args.length == 0)
