@@ -1,7 +1,7 @@
 {
-	"name": "fenix-discord-bot",
-	"description": "Um bot de discord para obter automaticamente informação da plataforma FénixEdu e exibi-la num servidor de discord.",
-	"repository": "https://github.com/guipenedo/fenix-discord-bot.git",
+	"name": "fenix-announcements-bot",
+	"description": "Um bot de discord para obter automaticamente informação da plataforma FénixEdu e exibi-la num servidor de discord. FIX ME",
+	"repository": "https://github.com/cristiano-clemente/fenix-announcements-bot",
 	"keywords": [
 		"discord",
 		"bot",
@@ -27,15 +27,15 @@
 		},
 		"BOT_ANNOUNCEMENT": {
 			"description": "Formato para as mensagens com anúncios do Fénix. Ver documentação para uma lista de tags disponíveis.",
-			"value": "**[{course_acronym}] {course_name}**\n__{title}__\n\n{description}\n\n{date} - *{author}*\n\n<{link}>"
+			"value": "**{course_name} - {title}**\n\n{description}\n\n*{date} - {author}*\n<{link}>"
 		},
 		"FENIX_URL": {
 			"description": "URL para a API do Fénix (o default está para a API do técnico).",
 			"value": "https://fenix.tecnico.ulisboa.pt/api/fenix/v1/"
 		},
 		"FENIX_DEGREE": {
-			"description": "ID do curso/degree. Pode ser obtido em FENIX_URL/degrees. (Default: MEAer)",
-			"value": "2761663971480"
+			"description": "ID do curso/degree. Pode ser obtido em FENIX_URL/degrees. (Default: LEIC-A)",
+			"value": "2761663971474"
 		},
 		"FEED_UPDATE_INTERVAL": {
 			"description": "Intervalo de tempo em segundos entre pedidos para procurar novos anúncios do Fénix.",
@@ -43,7 +43,7 @@
 		},
 		"FEED_SEND_FIRST": {
 			"description": "Se quando o feed é adicionado pela primeira vez os anúncios anteriores devem ser enviados.",
-			"value": "false"
+			"value": "true"
 		},
 		"LOCALE": {
 			"description": "Locale para mostrar as strings de tempo. Default: pt",
@@ -61,4 +61,3 @@
 		}
 	}
 }
-  
