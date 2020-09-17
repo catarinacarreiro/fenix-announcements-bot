@@ -19,6 +19,7 @@ module.exports = {
           return message.channel.send(`\`\`\`Disciplina [${course.acronym}] ${course.name} já estava desativada.\`\`\``);
 				else {
           course.active = false;
+					course.lastUpdated = 0;
           message.channel.send(`\`\`\`[${course.acronym}] ${course.name} desativada com sucesso.\`\`\``);
           course.save();
         }

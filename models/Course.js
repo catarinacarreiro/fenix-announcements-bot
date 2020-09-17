@@ -4,19 +4,19 @@ var Schema = mongoose.Schema;
 module.exports = new Schema({
 	acronym:  String,
 	credits: {
-		type: Number, 
+		type: Number,
 		set: v => parseFloat(v, 10)
 	},
 	name:   String,
 	id:   {
-		type: Number, 
+		type: Number,
 		set: v => parseInt(v, 10),
 		unique: true
 	},
 	academicTerm: String,
 	lastUpdated: Date,
 	active: {
-		type: Boolean, 
+		type: Boolean,
 		default: false
 	},
 	feedLink: String

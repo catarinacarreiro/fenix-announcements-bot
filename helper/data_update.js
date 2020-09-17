@@ -10,7 +10,7 @@ function getLastUpdate(){
 			if (!error) {
 				if (result){
 					resolve(result);
-				}else 
+				}else
 					resolve(new Updates());
 			} else
 				reject(error);
