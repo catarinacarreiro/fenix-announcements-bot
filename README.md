@@ -71,7 +71,9 @@ npm start
 
 #### Deploying To Heroku
 1. Click this button.
-[!(https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
+
 2. Definir um nome e região
 3. Fill in the [Config Vars](#configuring-the-bot).
 4. Click "Deploy App".
