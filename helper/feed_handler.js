@@ -33,7 +33,7 @@ function checkFeeds() {
 	Course.find({active: true}, (error, courses) => {
 		if(error) throw error;
 		courses.forEach(course => {
-			console.log(course.feedLink); //
+			console.log('feedLink: ' + course.feedLink); //
 			axios({
 				method: 'get',
 				url: course.feedLink,
