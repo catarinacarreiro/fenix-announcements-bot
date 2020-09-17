@@ -111,19 +111,13 @@ Prefix for all the bot's commands.
 
 Announcement format. The following tags are available:
 
-{course_acronym} - course acronym
-
-{course_name} - course name
-
-{title} - announcement title
-
-{description} - announcement description/content
-
-{date} - announcement date
-
-{author} - announcement author
-
-{link} - announcement link
+* {course_acronym} - course acronym
+* {course_name} - course name
+* {title} - announcement title
+* {description} - announcement description/content
+* {date} - announcement date
+* {author} - announcement author
+* {link} - announcement link
 
 **FENIX_URL**
 
