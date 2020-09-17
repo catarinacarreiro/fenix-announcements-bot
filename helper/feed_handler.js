@@ -34,7 +34,7 @@ function checkFeeds() {
 		if(error) throw error;
 		courses.forEach(course => {
 			axios({
-				metod: 'get',
+				method: 'get',
 				url: course.feedLink,
 				responseType: 'stream'
 			})

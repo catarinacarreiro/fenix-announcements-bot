@@ -37,6 +37,7 @@ function updateCourses(lastUpdate){
 				Course.updateOne({id: id}, cdata, {upsert: true}).then(() => {
 					courses.get(cdata.id, res => {
 						if(!res.data) return;
+						console.log(res.data.announcementLink); //
 						Course.updateOne({id: id}, {feedLink: res.data.announcementLink}).exec();
 					});
 				});
