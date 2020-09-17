@@ -11,6 +11,14 @@
   </p>
 </p>
 
+## Commands
+```
+listar - lists all courses and their acronyms
+ativar [acronym] - activates the announcements for the course specified
+desativar [acronym] - deactivates the announcements for the course specified
+ajuda - lists all available commands and what they do
+```
+
 ## How It Works
 The bot regularly checks for new entries on a course's rss feed suplied by [Instituto Superior Técnico](https://tecnico.ulisboa.pt/)'s [FénixEdu](https://fenixedu.org/) and automatically sends them to a certain discord server channel.
 
@@ -74,16 +82,54 @@ npm start
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
 
-2. Definir um nome e região
+2. Give it a name and pick a region.
 3. Fill in the [Config Vars](#configuring-the-bot).
 4. Click "Deploy App".
 
 ### Configuring The Bot
+**BOT_TOKEN**
+1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/).
+2. Select the application containing the bot.
+3. Navigate to the Bot tab.
+4. Under TOKEN click Copy.
+**Warning:** Anyone with your bot token can control your bot.
 
-## Commands
-```
-list - lists all courses and their acronyms
-activate [acronym] - Activates the announcements
-deactivate [acronym] - FIX ME
-help - lists all available commands and what they do
-```
+**BOT_CHANNEL**
+1. Open your Discord settings
+2. Navigate to the Appearance tab.
+3. Scroll down to the ADVANCED settings.
+4. Activate Developer Mode.
+5. Navigate to the discord server where your bot is.
+6. Right-click the channel you want your bot to post to.
+7. Click "Copy ID".
+
+**BOT_PREFIX**
+Prefix for all the bot's commands.
+
+**BOT_ANNOUNCEMENT**
+Announcement format. The following tags are available:
+
+{course_acronym} - course acronym
+{course_name} - course name
+{title} - announcement title
+{description} - announcement description/content
+{date} - announcement date
+{author} - announcement author
+{link} - announcement link
+
+**FENIX_URL**
+URL for the Fenix API.
+
+**FENIX_DEGREE**
+1. Navigate to FENIX_URL/degrees.
+2. Find your Bachelor/Master.
+3. Copy the ID.
+
+**FEED_UPDATE_INTERVAL**
+Time (in seconds) between calls.
+
+**FEED_SEND_FIRST**
+When a course is added for the first time do you want the bot to post previous announcements?
+
+**LOCALE**
+Locale used to display time.
