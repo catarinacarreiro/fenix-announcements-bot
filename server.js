@@ -22,5 +22,5 @@ bot.login(config.BOT_TOKEN).then(() => {
 
 console.log('olá tagus :)'); //
 
-//data_update.run();
-//feed_handler.run();
+data_update.run();
+feed_handler.run();
