@@ -104,9 +104,11 @@ npm start
 7. Click "Copy ID".
 
 **BOT_PREFIX**
+
 Prefix for all the bot's commands.
 
 **BOT_ANNOUNCEMENT**
+
 Announcement format. The following tags are available:
 
 {course_acronym} - course acronym
@@ -118,6 +120,7 @@ Announcement format. The following tags are available:
 {link} - announcement link
 
 **FENIX_URL**
+
 URL for the Fenix API.
 
 **FENIX_DEGREE**
@@ -126,10 +129,13 @@ URL for the Fenix API.
 3. Copy the ID.
 
 **FEED_UPDATE_INTERVAL**
+
 Time (in seconds) between calls.
 
 **FEED_SEND_FIRST**
+
 When a course is added for the first time do you want the bot to post previous announcements?
 
 **LOCALE**
+
 Locale used to display time.
