@@ -27,37 +27,54 @@ The bot regularly checks for new entries on a course's rss feed suplied by [Inst
 
 ## How Can I Use It In My Own Discord Server
 ### Creating The Bot
-1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/), create a new application and name it (this is not the bot's name).
-2. Navigate to the Bot tab, add a bot, give it a name and make sure that both PUBLIC BOT and REQUIRES OAUTH2 CODE GRANT are disabled.
+1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/).
+2. Create a new application.
+3. Name it (this is not the bot's name).
+4. Navigate to the Bot tab.
+5. Add a bot.
+6. Give it a name.
+7. Make sure that both PUBLIC BOT and REQUIRES OAUTH2 CODE GRANT are disabled.
 
 ### Adding The Bot To The Server
-1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/), select the application containing the bot, navigate to the OAuth2 tab, scroll down to the OAuth2 URL Generator section and under Scopes select bot, navigate to the generated link and add the bot to your desired server.
+1. Navigate to [Discord's Developer Portal](https://discordapp.com/developers/applications/).
+2. Select the application containing the bot.
+3. Navigate to the OAuth2 tab.
+4. Scroll down to the OAuth2 URL Generator section.
+5. Under Scopes select bot.
+6. Navigate to the generated link.
+7. Add the bot to your desired server.
 
 ### Deploying The Bot
 #### Deploying Locally
 1. Install [Node.js](https://nodejs.org/en/download/) and [MongoDB](https://www.mongodb.com/try/download/community).
-2. Clone this repository. `git clone https://github.com/cristiano-clemente/fenix-announcements-bot.git`
-3. Navigate to the repository. `cd fenix-discord-bot`
-4. Install dependencies. `npm install`
-5. Make a copy of .env.default, name it .env e fill in the configurations. `cp .env.default .env`
-6. Run the bot. `npm start`
-
-#### Deploying To Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
+2. Clone this repository.
 ```
-3. Install NPM packages
-```sh
+git clone https://github.com/cristiano-clemente/fenix-announcements-bot.git
+```
+3. Navigate to the repository.
+```
+cd fenix-discord-bot
+```
+4. Install dependencies.
+```
 npm install
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+5. Make a copy of .env.default and name it .env.
 ```
+cp .env.default .env
+```
+6. Open .env and fill in the [Config Vars](#configuring-the-bot).
+7. Run the bot.
+```
+npm start
+```
+
+#### Deploying To Heroku
+1. Click this button.
+[!(https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/cristiano-clemente/fenix-announcements-bot)
+2. Definir um nome e região
+3. Fill in the [Config Vars](#configuring-the-bot).
+4. Click "Deploy App".
 
 ### Configuring The Bot
 
