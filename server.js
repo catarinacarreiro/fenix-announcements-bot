@@ -4,6 +4,8 @@ const config = require('./config');
 const mongoose = require('mongoose');
 const data_update = require('./helper/data_update');
 
+console.log('olá tagus :)'); //
+
 mongoose.connect(config.MONGODB_URI, {useNewUrlParser: true}).then(() => {
 	console.log('Ligação ao MongoDB estabelecida com sucesso.');
 }).catch(error => {
